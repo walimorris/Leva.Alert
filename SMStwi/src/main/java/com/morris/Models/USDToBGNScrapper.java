@@ -1,6 +1,3 @@
-/**
- * @author Wali Morris
- */
 package com.morris.Models;
 
 import com.morris.Constants;
