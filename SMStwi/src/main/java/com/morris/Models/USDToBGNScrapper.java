@@ -1,3 +1,6 @@
+/**
+ * @author Wali Morris
+ */
 package com.morris.Models;
 
 import com.morris.Constants;
@@ -42,7 +45,7 @@ public class USDToBGNScrapper {
             return null;
         }
         int contentMarkEnd = contentMark + Constants.USD_TO_BGN_MARKUP_EXTENSION_COUNT;
-        while (contentMark < contentMarkEnd) {
+        while (contentMark < contentMarkEnd && contentMark < content.length()) {
             stringBuilder.append(content.charAt(contentMark));
             contentMark++;
         }
