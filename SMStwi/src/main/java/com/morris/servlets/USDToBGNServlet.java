@@ -1,7 +1,7 @@
 package com.morris.servlets;
 
 import com.morris.Constants;
-import com.morris.Models.USDToBGNScrapper;
+import com.morris.Models.Impl.USDToBGNScrapperImpl;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -27,7 +27,7 @@ public class USDToBGNServlet {
         while ((inputLine = in.readLine()) != null) {
             content.append(inputLine);
         }
-        USDToBGNScrapper scrapper = new USDToBGNScrapper(Constants.USD_TO_BGN_GOOGLE_MARKUP);
+        USDToBGNScrapperImpl scrapper = new USDToBGNScrapperImpl(Constants.USD_TO_BGN_GOOGLE_MARKUP);
         String response = scrapper.getUSDBGNRate(content);
         in.close();
         connection.disconnect();
