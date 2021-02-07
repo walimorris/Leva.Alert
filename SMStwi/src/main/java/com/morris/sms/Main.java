@@ -6,6 +6,9 @@ import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 
 import java.io.IOException;
+import java.net.URI;
+import java.util.Collections;
+
 import com.morris.Constants;
 
 public class Main {
@@ -20,9 +23,9 @@ public class Main {
                 new PhoneNumber(Constants.TO),
                 new PhoneNumber(Constants.FROM),
                 usdToBGNRate)
+                .setMediaUrl(
+                        Collections.singletonList(URI.create(Constants.BULGARIAN_NATIONAL_PRIDE)))
                 .create();
-
         System.out.println(message.getSid());
     }
 }
-
