@@ -1,5 +1,6 @@
 package com.morris.sms;
 
+import com.morris.Models.Impl.MessagePropertyImpl;
 import com.morris.servlets.USDToBGNServlet;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
@@ -17,12 +18,15 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         USDToBGNServlet usdToBGNServlet = new USDToBGNServlet(Constants.USD_TO_BGN_GOOGLE_FINANCE);
+        MessagePropertyImpl messageProperty = new MessagePropertyImpl();
+        String time = messageProperty.currentTime();
+        String date = messageProperty.currentDate();
         String usdToBGNRate = usdToBGNServlet.doGet();
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         Message message = Message.creator(
                 new PhoneNumber(Constants.TO),
                 new PhoneNumber(Constants.FROM),
-                usdToBGNRate)
+                usdToBGNRate + "\n\n" + date + " " + time)
                 .setMediaUrl(
                         Collections.singletonList(URI.create(Constants.BULGARIAN_NATIONAL_PRIDE)))
                 .create();
