@@ -3,6 +3,11 @@ package com.morris.Models.Impl;
 import com.morris.Constants;
 import com.morris.Models.USDToBGNScrapper;
 
+/**
+ * Implementation class for {@link USDToBGNScrapper}
+ *
+ * @author Wali Morris<walimmorris@gmail.com>
+ */
 public class USDToBGNScrapperImpl implements USDToBGNScrapper {
     StringBuilder stringBuilder;
     String markup;

@@ -3,6 +3,11 @@ package com.morris.Models.Impl;
 import com.morris.Models.MessageProperty;
 import java.util.Date;
 
+/**
+ * Implementation class for {@link MessageProperty}
+ *
+ * @author Wali Morris<walimmorris@gmail.com>
+ */
 public class MessagePropertyImpl implements MessageProperty {
     public MessagePropertyImpl() { }
 
