@@ -1,4 +1,12 @@
+/home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/SelectionConstants.java
+/home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/Models/Impl/HistoryLessonSMSImpl.java
+/home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/servlets/InitSMSResponseServlet.java
+/home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/Models/MessageProperty.java
 /home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/servlets/USDToBGNServlet.java
+/home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/servlets/InitSMSServlet.java
 /home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/Constants.java
+/home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/Models/HistoryLessonSMS.java
 /home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/sms/Main.java
+/home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/Models/Impl/USDToBGNScrapperImpl.java
 /home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/Models/USDToBGNScrapper.java
+/home/tuvok/ImportantEvents/SMStwi/src/main/java/com/morris/Models/Impl/MessagePropertyImpl.java

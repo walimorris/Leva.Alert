@@ -146,3 +146,219 @@ DEBUG qtp321412515-20 org.eclipse.jetty.util.thread.ReservedThreadExecutor - Res
 DEBUG qtp321412515-20 org.eclipse.jetty.util.thread.ReservedThreadExecutor - ReservedThreadExecutor@62d53fd8{s=1/8,p=0}@42e93150 IDLE
 DEBUG qtp321412515-20 org.eclipse.jetty.util.thread.ReservedThreadExecutor - ReservedThreadExecutor@62d53fd8{s=0/8,p=0}@42e93150 Exited
 DEBUG qtp321412515-20 org.eclipse.jetty.util.thread.QueuedThreadPool - ran ReservedThreadExecutor@62d53fd8{s=0/8,p=0}@42e93150 in QueuedThreadPool[qtp321412515]@13285da3{STARTED,8<=8<=200,i=2,r=8,q=0}[ReservedThreadExecutor@62d53fd8{s=0/8,p=0}]
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - Selector sun.nio.ch.EPollSelectorImpl@393eb12c woken up from select, 1/1/1 selected
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - Selector sun.nio.ch.EPollSelectorImpl@393eb12c processing 1 keys, 0 updates
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - selected 1 sun.nio.ch.SelectionKeyImpl@33c6da5c SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,OPEN,fill=FI,flush=-,to=300137/3600000}{io=1/1,kio=1,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0} 
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ChannelEndPoint - onSelected 1->0 r=true w=false for SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,OPEN,fill=FI,flush=-,to=300138/3600000}{io=1/0,kio=1,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ChannelEndPoint - task CEP:SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,OPEN,fill=FI,flush=-,to=300138/3600000}{io=1/0,kio=1,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}:runFillable:BLOCKING
+DEBUG qtp321412515-15 org.eclipse.jetty.util.thread.ReservedThreadExecutor - ReservedThreadExecutor@62d53fd8{s=0/8,p=0} tryExecute EatWhatYouKill@56ed245e/SelectorProducer@206ea1af/PRODUCING/p=false/QueuedThreadPool[qtp321412515]@13285da3{STARTED,8<=8<=200,i=3,r=8,q=0}[ReservedThreadExecutor@62d53fd8{s=0/8,p=0}][pc=0,pic=0,pec=1,epc=0]@2021-02-08T16:41:40.36-08:00
+DEBUG qtp321412515-15 org.eclipse.jetty.util.thread.ReservedThreadExecutor - ReservedThreadExecutor@62d53fd8{s=0/8,p=1} startReservedThread p=1
+DEBUG qtp321412515-15 org.eclipse.jetty.util.thread.QueuedThreadPool - queue ReservedThreadExecutor@62d53fd8{s=0/8,p=1}@16ebbd0f startThread=0
+DEBUG qtp321412515-19 org.eclipse.jetty.util.thread.QueuedThreadPool - run ReservedThreadExecutor@62d53fd8{s=0/8,p=1}@16ebbd0f in QueuedThreadPool[qtp321412515]@13285da3{STARTED,8<=8<=200,i=2,r=8,q=0}[ReservedThreadExecutor@62d53fd8{s=0/8,p=1}]
+DEBUG qtp321412515-19 org.eclipse.jetty.util.thread.ReservedThreadExecutor - ReservedThreadExecutor@62d53fd8{s=1/8,p=1}@16ebbd0f started
+DEBUG qtp321412515-19 org.eclipse.jetty.util.thread.ReservedThreadExecutor - ReservedThreadExecutor@62d53fd8{s=1/8,p=0}@16ebbd0f waiting
+DEBUG qtp321412515-15 org.eclipse.jetty.util.thread.strategy.EatWhatYouKill - EatWhatYouKill@56ed245e/SelectorProducer@206ea1af/PRODUCING/p=false/QueuedThreadPool[qtp321412515]@13285da3{STARTED,8<=8<=200,i=2,r=8,q=0}[ReservedThreadExecutor@62d53fd8{s=0/8,p=1}][pc=0,pic=0,pec=1,epc=0]@2021-02-08T16:41:40.361-08:00 m=PRODUCE_EXECUTE_CONSUME t=CEP:SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,OPEN,fill=FI,flush=-,to=300141/3600000}{io=1/0,kio=1,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}:runFillable:BLOCKING/BLOCKING
+DEBUG qtp321412515-15 org.eclipse.jetty.util.thread.QueuedThreadPool - queue CEP:SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,OPEN,fill=FI,flush=-,to=300142/3600000}{io=1/0,kio=1,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}:runFillable:BLOCKING startThread=0
+DEBUG qtp321412515-20 org.eclipse.jetty.util.thread.QueuedThreadPool - run CEP:SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,OPEN,fill=FI,flush=-,to=300142/3600000}{io=1/0,kio=1,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}:runFillable:BLOCKING in QueuedThreadPool[qtp321412515]@13285da3{STARTED,8<=8<=200,i=1,r=8,q=0}[ReservedThreadExecutor@62d53fd8{s=1/8,p=0}]
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - updateable 0
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - updates 0
+DEBUG qtp321412515-20 org.eclipse.jetty.io.FillInterest - fillable FillInterest@64e9bfc9{AC.ReadCB@5652d67d{HttpConnection@5652d67d::SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,OPEN,fill=FI,flush=-,to=300144/3600000}{io=1/0,kio=1,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}}}
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ChannelEndPoint - Key interests updated 1 -> 0 on SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,OPEN,fill=FI,flush=-,to=300145/3600000}{io=0/0,kio=0,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - Selector sun.nio.ch.EPollSelectorImpl@393eb12c waiting with 1 keys
+DEBUG qtp321412515-20 org.eclipse.jetty.server.HttpConnection - HttpConnection@5652d67d::SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,OPEN,fill=-,flush=-,to=300146/3600000}{io=0/0,kio=0,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0} onFillable enter HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0} null
+DEBUG qtp321412515-20 org.eclipse.jetty.io.AbstractEndPoint - shutdownInput SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,OPEN,fill=-,flush=-,to=300149/3600000}{io=0/0,kio=0,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+DEBUG qtp321412515-20 org.eclipse.jetty.io.ChannelEndPoint - filled -1 HeapByteBuffer@5962a66d[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 ...\x00\x00\x00\x00\x00\x00\x00}
+DEBUG qtp321412515-20 org.eclipse.jetty.http.HttpParser - atEOF HttpParser{s=START,0 of -1}
+DEBUG qtp321412515-20 org.eclipse.jetty.server.HttpConnection - HttpConnection@5652d67d::SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,ISHUT,fill=-,flush=-,to=300150/3600000}{io=0/0,kio=0,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0} filled -1 HeapByteBuffer@5962a66d[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 ...\x00\x00\x00\x00\x00\x00\x00}
+DEBUG qtp321412515-20 org.eclipse.jetty.server.HttpConnection - HttpConnection@5652d67d::SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,ISHUT,fill=-,flush=-,to=300151/3600000}{io=0/0,kio=0,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=START,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0} parse HeapByteBuffer@5962a66d[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 ...\x00\x00\x00\x00\x00\x00\x00} {}
+DEBUG qtp321412515-20 org.eclipse.jetty.http.HttpParser - parseNext s=START HeapByteBuffer@5962a66d[p=0,l=0,c=8192,r=0]={<<<>>>HTTP/1.1 ...\x00\x00\x00\x00\x00\x00\x00}
+DEBUG qtp321412515-20 org.eclipse.jetty.http.HttpParser - START --> CLOSED
+DEBUG qtp321412515-20 org.eclipse.jetty.io.AbstractEndPoint - close SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,ISHUT,fill=-,flush=-,to=300152/3600000}{io=0/0,kio=0,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+DEBUG qtp321412515-20 org.eclipse.jetty.io.AbstractEndPoint - close(null) SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,ISHUT,fill=-,flush=-,to=300152/3600000}{io=0/0,kio=0,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+DEBUG qtp321412515-20 org.eclipse.jetty.io.ChannelEndPoint - doClose SocketChannelEndPoint@218de944{l=/127.0.0.1:4567,r=/127.0.0.1:53274,CLOSED,fill=-,flush=-,to=300153/3600000}{io=0/0,kio=0,kro=1}->HttpConnection@5652d67d[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+DEBUG qtp321412515-20 org.eclipse.jetty.io.FillInterest - onClose FillInterest@64e9bfc9{null}
+DEBUG qtp321412515-20 org.eclipse.jetty.io.ManagedSelector - Wakeup ManagedSelector@4d0bccf4{STARTED} id=1 keys=1 selected=0 updates=0
+DEBUG qtp321412515-20 org.eclipse.jetty.util.thread.QueuedThreadPool - queue org.eclipse.jetty.io.ManagedSelector$DestroyEndPoint@565550f9 startThread=0
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - Selector sun.nio.ch.EPollSelectorImpl@393eb12c woken with none selected
+DEBUG qtp321412515-21 org.eclipse.jetty.util.thread.QueuedThreadPool - run org.eclipse.jetty.io.ManagedSelector$DestroyEndPoint@565550f9 in QueuedThreadPool[qtp321412515]@13285da3{STARTED,8<=8<=200,i=0,r=8,q=0}[ReservedThreadExecutor@62d53fd8{s=1/8,p=0}]
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - Selector sun.nio.ch.EPollSelectorImpl@393eb12c woken up from select, 0/0/0 selected
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - Selector sun.nio.ch.EPollSelectorImpl@393eb12c processing 0 keys, 0 updates
+DEBUG qtp321412515-21 org.eclipse.jetty.io.ManagedSelector - Destroyed SocketChannelEndPoint@218de944{l=0.0.0.0/0.0.0.0:4567,r=null,CLOSED,fill=-,flush=-,to=300157/3600000}{io=0/0,kio=-1,kro=-1}->HttpConnection@5652d67d[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+DEBUG qtp321412515-20 org.eclipse.jetty.server.HttpConnection - HttpConnection@5652d67d::SocketChannelEndPoint@218de944{l=0.0.0.0/0.0.0.0:4567,r=null,CLOSED,fill=-,flush=-,to=300157/3600000}{io=0/0,kio=-1,kro=-1}->HttpConnection@5652d67d[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0} parsed false HttpParser{s=CLOSED,0 of -1}
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - updateable 0
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - updates 0
+DEBUG qtp321412515-20 org.eclipse.jetty.server.HttpConnection - releaseRequestBuffer HttpConnection@5652d67d::SocketChannelEndPoint@218de944{l=0.0.0.0/0.0.0.0:4567,r=null,CLOSED,fill=-,flush=-,to=300158/3600000}{io=0/0,kio=-1,kro=-1}->HttpConnection@5652d67d[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+DEBUG qtp321412515-21 org.eclipse.jetty.io.AbstractConnection - onClose HttpConnection@5652d67d::SocketChannelEndPoint@218de944{l=0.0.0.0/0.0.0.0:4567,r=null,CLOSED,fill=-,flush=-,to=300158/3600000}{io=0/0,kio=-1,kro=-1}->HttpConnection@5652d67d[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+DEBUG qtp321412515-15 org.eclipse.jetty.io.ManagedSelector - Selector sun.nio.ch.EPollSelectorImpl@393eb12c waiting with 0 keys
+DEBUG qtp321412515-20 org.eclipse.jetty.io.AbstractEndPoint - shutdownOutput SocketChannelEndPoint@218de944{l=0.0.0.0/0.0.0.0:4567,r=null,CLOSED,fill=-,flush=-,to=300159/3600000}{io=0/0,kio=-1,kro=-1}->HttpConnection@5652d67d[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}
+DEBUG qtp321412515-21 org.eclipse.jetty.util.thread.QueuedThreadPool - ran org.eclipse.jetty.io.ManagedSelector$DestroyEndPoint@565550f9 in QueuedThreadPool[qtp321412515]@13285da3{STARTED,8<=8<=200,i=0,r=8,q=0}[ReservedThreadExecutor@62d53fd8{s=1/8,p=0}]
+DEBUG qtp321412515-20 org.eclipse.jetty.server.HttpConnection - HttpConnection@5652d67d::SocketChannelEndPoint@218de944{l=0.0.0.0/0.0.0.0:4567,r=null,CLOSED,fill=-,flush=-,to=300160/3600000}{io=0/0,kio=-1,kro=-1}->HttpConnection@5652d67d[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0} onFillable exit HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0} null
+DEBUG qtp321412515-20 org.eclipse.jetty.util.thread.QueuedThreadPool - ran CEP:SocketChannelEndPoint@218de944{l=0.0.0.0/0.0.0.0:4567,r=null,CLOSED,fill=-,flush=-,to=300160/3600000}{io=0/0,kio=-1,kro=-1}->HttpConnection@5652d67d[p=HttpParser{s=CLOSED,0 of -1},g=HttpGenerator@6995e94e{s=START}]=>HttpChannelOverHttp@2152cf1c{s=HttpChannelState@36e7011f{s=IDLE rs=BLOCKING os=OPEN is=IDLE awp=false se=false i=true al=0},r=1,c=false/false,a=IDLE,uri=null,age=0}:runFillable:BLOCKING in QueuedThreadPool[qtp321412515]@13285da3{STARTED,8<=8<=200,i=1,r=8,q=0}[ReservedThreadExecutor@62d53fd8{s=1/8,p=0}]
+DEBUG qtp321412515-19 org.eclipse.jetty.util.thread.ReservedThreadExecutor - ReservedThreadExecutor@62d53fd8{s=1/8,p=0}@16ebbd0f task=null
+DEBUG qtp321412515-19 org.eclipse.jetty.util.thread.ReservedThreadExecutor - ReservedThreadExecutor@62d53fd8{s=1/8,p=0}@16ebbd0f IDLE
+DEBUG qtp321412515-19 org.eclipse.jetty.util.thread.ReservedThreadExecutor - ReservedThreadExecutor@62d53fd8{s=0/8,p=0}@16ebbd0f Exited
+DEBUG qtp321412515-19 org.eclipse.jetty.util.thread.QueuedThreadPool - ran ReservedThreadExecutor@62d53fd8{s=0/8,p=0}@16ebbd0f in QueuedThreadPool[qtp321412515]@13285da3{STARTED,8<=8<=200,i=2,r=8,q=0}[ReservedThreadExecutor@62d53fd8{s=0/8,p=0}]
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - node0 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging sessions
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - spark.embeddedserver.jetty.JettyHandler1478157817==dftMaxIdleSec=-1 scavenging session ids []
+DEBUG Session-HouseKeeper-28eb5b7b-1 org.eclipse.jetty.server.session - org.eclipse.jetty.server.session.DefaultSessionCache@43624f6c[evict=-1,removeUnloadable=false,saveOnCreate=false,saveOnInactiveEvict=false] checking expiration on []

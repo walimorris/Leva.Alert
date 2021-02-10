@@ -1,4 +1,12 @@
-com/morris/servlets/USDToBGNServlet.class
+com/morris/Models/Impl/HistoryLessonSMSImpl.class
 com/morris/sms/Main.class
-com/morris/Models/USDToBGNScrapper.class
+com/morris/servlets/InitSMSServlet.class
+com/morris/SelectionConstants.class
+com/morris/servlets/InitSMSResponseServlet.class
 com/morris/Constants.class
+com/morris/Models/MessageProperty.class
+com/morris/Models/Impl/MessagePropertyImpl.class
+com/morris/servlets/USDToBGNServlet.class
+com/morris/Models/HistoryLessonSMS.class
+com/morris/Models/USDToBGNScrapper.class
+com/morris/Models/Impl/USDToBGNScrapperImpl.class

@@ -11,4 +11,5 @@ public class Constants {
     public static final int USD_TO_BGN_MARKUP_EXTENSION_COUNT = 182;
     public static final String REQUEST_BODY_QUERY_PARAM = "Body";
     public static final String GET_REQUEST_TEXT = "Trigger SMS";
+    public static final String TYPE_SMS = "sms";
 }

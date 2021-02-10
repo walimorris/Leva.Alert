@@ -19,22 +19,44 @@ import static spark.Spark.post;
  */
 public class InitSMSResponseServlet {
     public static final String HISTORY = "History";
+    public static final String USD_TO_BGN = "usd to bgn";
 
     public void InitSMSResponseService() {
         post("/", (request, response) -> {
             StringBuilder message = new StringBuilder();
+            StringBuilder messageType = new StringBuilder();
+            MessagingResponse twiml = null; 
             String param = request.queryParams(Constants.REQUEST_BODY_QUERY_PARAM);
             switch ( param ) {
                 case HISTORY:
                     HistoryLessonSMSImpl historyLessonSMS = new HistoryLessonSMSImpl();
                     message.append(historyLessonSMS.viewHistory());
+                    messageType.append(Constants.TYPE_SMS); 
+                    break;
+
+                case USD_TO_BGN:
+                    USDToBGNServlet usdToBGNServlet = new USDToBGNServlet(Constants.USD_TO_BGN_GOOGLE_FINANCE);
+                    message.append(usdToBGNServlet.doGet());
+                    messageType.append(Constants.TYPE_SMS);
                     break;
             }
-            Body messageBody = new Body.Builder(message.toString()).build();
-            Message sms = new Message.Builder().body(messageBody).build();
-            MessagingResponse twiml = new MessagingResponse.Builder().message(sms).build();
+            if (messageType.toString().equals(Constants.TYPE_SMS)) {
+                twiml = buildSMS(message);
+            }
             response.type("application/xml");
+            assert twiml != null;
             return twiml.toXml();
         });
+    }
+
+    /**
+     * Builds SMS message type.
+     * @param message : message request from user.
+     * @return {@link MessagingResponse}
+     */
+    private MessagingResponse buildSMS(StringBuilder message) {
+        Body messageBody = new Body.Builder(message.toString()).build();
+        Message sms = new Message.Builder().body(messageBody).build();
+        return new MessagingResponse.Builder().message(sms).build();
     }
 }
