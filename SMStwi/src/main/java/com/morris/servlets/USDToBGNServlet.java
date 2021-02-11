@@ -12,8 +12,8 @@ import java.net.URL;
 public class USDToBGNServlet {
     String url;
 
-    public USDToBGNServlet(String url) {
-        this.url = url;
+    public USDToBGNServlet() {
+        this.url = Constants.USD_TO_BGN_GOOGLE_FINANCE;
     }
 
     public String doGet() throws IOException {
